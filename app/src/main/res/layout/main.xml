@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:id="@+id/currentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="创建联系人"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <com.callstools.MyViewPager
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/contact_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="联系人"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/sms_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="短信"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/calls_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="通话记录"
+            android:onClick="onClick"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

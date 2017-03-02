@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="基础号码:"
+            android:gravity="center|left"
+            />
+        <EditText
+            android:id="@+id/sms_baseNum_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="15901010000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="信息内容:"
+            android:gravity="center|left"
+            />
+        <EditText
+            android:id="@+id/sms_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="哈哈，你好！"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="信息类型:"
+            android:gravity="center|left"
+            />
+        <EditText
+            android:id="@+id/sms_type_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="1:已读，0:未读"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="创建个数:"
+            android:gravity="center|left"
+            />
+        <EditText
+            android:id="@+id/sms_create_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="100"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ProgressBar
+            android:id="@+id/sms_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sms_create_bt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="创建"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_rectangle_with_stroke"
+        />
+
+</LinearLayout>
